@@ -1,0 +1,60 @@
+name: arypsa_rh
+description: "Arypsa RH - alta de personal, huella y control del reloj checador."
+publish_to: 'none'
+version: 1.1.0+2
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  supabase_flutter: ^2.9.0
+  shared_preferences: ^2.3.2
+  geolocator: ^13.0.1
+  image_picker: ^1.1.2
+  qr_flutter: ^4.1.0
+  # Expediente digital: subir PDFs y abrirlos fuera de la app
+  file_picker: ^10.3.0
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/img/arypsa-mark.png
+  remove_alpha_ios: true
+  background_color_ios: "#FFFFFF"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: assets/img/arypsa-mark.png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/img/
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Inter-ExtraBold.ttf
+          weight: 800
+    - family: Sora
+      fonts:
+        - asset: assets/fonts/Sora-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Sora-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Sora-ExtraBold.ttf
+          weight: 800
