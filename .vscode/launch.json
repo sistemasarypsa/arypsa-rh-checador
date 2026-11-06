@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Arypsa RH",
+      "request": "launch",
+      "type": "dart",
+      "cwd": "apps/rh",
+      "program": "lib/main.dart"
+    },
+    {
+      "name": "Arypsa Checador",
+      "request": "launch",
+      "type": "dart",
+      "cwd": "apps/checador",
+      "program": "lib/main.dart"
+    }
+  ]
+}
