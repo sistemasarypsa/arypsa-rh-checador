@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'config.dart';
@@ -18,8 +19,13 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final _correo = TextEditingController();
-  final _pass = TextEditingController();
+  // Datos de prueba: solo se precargan en modo desarrollo (flutter run).
+  // En el APK final los campos salen vacíos. Quitar antes de producción.
+  static const _correoPrueba = 'sistemas@arypsa.com';
+  static const _passwordPrueba = 'Pedro061203';
+
+  final _correo = TextEditingController(text: kDebugMode ? _correoPrueba : '');
+  final _pass = TextEditingController(text: kDebugMode ? _passwordPrueba : '');
   bool _ocultar = true;
   bool _cargando = false;
 
