@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.arypsa_checador"
+    namespace = "com.arypsa.checador"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 

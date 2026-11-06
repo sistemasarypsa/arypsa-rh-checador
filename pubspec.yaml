@@ -8,3 +8,4 @@ environment:
 
 workspace:
   - apps/rh
+  - apps/checador

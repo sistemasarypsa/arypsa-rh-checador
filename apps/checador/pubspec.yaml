@@ -6,6 +6,9 @@ version: 1.0.0+1
 environment:
   sdk: ^3.9.0
 
+# Se resuelve junto con el resto del monorepo (pubspec.yaml de la raíz).
+resolution: workspace
+
 dependencies:
   flutter:
     sdk: flutter
