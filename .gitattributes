@@ -1,0 +1,15 @@
+# Finales de línea uniformes (LF) en Windows y Mac
+* text=auto eol=lf
+
+# Archivos binarios: nunca se convierten
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.ttf binary
+*.otf binary
+*.tflite binary
+*.jar binary
+*.so binary
+*.bundle binary
