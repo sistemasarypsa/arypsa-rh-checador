@@ -8,7 +8,9 @@
 build/
 *.iml
 .idea/
-.vscode/
+.vscode/*
+# Se comparte la configuración para correr cada app con F5
+!.vscode/launch.json
 .DS_Store
 
 # Android
