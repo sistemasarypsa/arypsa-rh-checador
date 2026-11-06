@@ -1,0 +1,68 @@
+name: arypsa_checador
+description: "Arypsa Checador - reloj checador con huella (kiosco con lector USB o celular con biometria) y geocerca."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  supabase_flutter: ^2.9.0
+  shared_preferences: ^2.3.2
+  path_provider: ^2.1.4
+  flutter_secure_storage: ^9.2.2
+  geolocator: ^13.0.1
+  local_auth: ^2.3.0
+  mobile_scanner: ^6.0.2
+  device_info_plus: ^11.1.0
+  wakelock_plus: ^1.2.8
+  uuid: ^4.4.2
+  # Reconocimiento facial en el equipo (sin nube)
+  camera: ^0.11.0
+  google_mlkit_face_detection: ^0.12.0
+  flutter_litert: ^3.9.4
+  image: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/img/arypsa-mark.png
+  remove_alpha_ios: true
+  background_color_ios: "#FFFFFF"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: assets/img/arypsa-mark.png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/img/
+    - assets/models/
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Inter-ExtraBold.ttf
+          weight: 800
+    - family: Sora
+      fonts:
+        - asset: assets/fonts/Sora-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Sora-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Sora-ExtraBold.ttf
+          weight: 800
